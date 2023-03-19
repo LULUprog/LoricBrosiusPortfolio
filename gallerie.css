@@ -33,9 +33,10 @@ img {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     height: 6vh;
     margin: 0 30px;
+    padding: 0 10px;
 }
 
 footer p a {
