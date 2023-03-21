@@ -66,11 +66,11 @@ ul {
 .centerer {
     margin: 0 auto;
 }
-img {
+a img {
     transition: 0.6s;
     transform: rotate(0deg);
 }
-img:hover {
+a img:hover {
     cursor: crosshair;
     transform: translate(8px, -8px);
     filter: none;
@@ -117,15 +117,32 @@ footer p a {
     font-weight: 500;
     font-size: 30px;
     text-decoration: none;
-    color: rgb(29, 29, 29);
+    color: rgb(138, 138, 138);
     transform-origin: center;
     transition: 0.4s ease-out;
 }
 
 footer p a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.4s ease-out;
 }
+@media screen and (max-width: 594px) {
+    h1 img {
+        opacity: 1;
+        position: absolute;
+        transform-origin: center;
+        left: 80%;
+        top: 0px;
+        padding: 15px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 720px) {
+    h1 img {
+        opacity: 0;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .img-container {
         width: 100%;
@@ -136,14 +153,39 @@ footer p a:hover {
     .links {
         margin: 25px 20px 0 0px;
     }
+    h1 img {
+        position: absolute;
+        transform-origin: center;
+        left: 47%;
+        top: 0px;
+        padding: 15px;
+        height: 60px;
+    }
 }
 @media screen and (min-width: 720px) {
     .img-container {
         width: 48.9%;
     }
+
+    h1 img {
+        position: absolute;
+        transform-origin: center;
+        left: 80%;
+        top: 0px;
+        padding: 15px;
+        height: 100px;
+    }
 }
 @media screen and (min-width: 1290px) {
     .img-container {
         width: 32.85%;
+    }
+    h1 img {
+        position: absolute;
+        transform-origin: center;
+        left: 47%;
+        top: 0px;
+        padding: 15px;
+        height: 100px;
     }
 }
